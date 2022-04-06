@@ -36,6 +36,7 @@ namespace ProductApps
                 cProduct.calTotalPayment();
                 myTotalPayment = (cProduct.TotalPayment) + 25.00m;
                 myTotalPayment = myTotalPayment + 5.00m;
+                myTotalPayment = myTotalPayment  *1.1m;
                 totalPaymentTextBlock.Text = myTotalPayment.ToString();//Convert.ToString(cProduct.TotalPayment);
             }
             catch (FormatException)
