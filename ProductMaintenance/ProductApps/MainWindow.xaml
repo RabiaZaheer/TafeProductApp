@@ -15,7 +15,9 @@
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
         <Label Content="Delivery charges ($25.00).  " HorizontalAlignment="Left" Margin="48,209,0,0" VerticalAlignment="Top" />
-        <TextBlock  HorizontalAlignment="Left" Margin="122,235,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="122,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="wrapping cost $5.00" HorizontalAlignment="Left" Margin="46,251,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="122,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
 
 
     </Grid>
