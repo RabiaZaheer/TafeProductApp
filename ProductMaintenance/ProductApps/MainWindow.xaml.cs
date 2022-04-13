@@ -34,10 +34,16 @@ namespace ProductApps
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
                 cProduct.calTotalPayment();
+                //Total Charge After GST@10% =  (Total payment + $25.00 + $5.00) * 1.1
                 myTotalPayment = (cProduct.TotalPayment) + 25.00m;
+                tbDeliveryCharges.Text = myTotalPayment.ToString();
+                //Add wrapping cost
                 myTotalPayment = myTotalPayment + 5.00m;
-                myTotalPayment = myTotalPayment  *1.1m;
-                totalPaymentTextBlock.Text = myTotalPayment.ToString();//Convert.ToString(cProduct.TotalPayment);
+                tbwrappingCost.Text = myTotalPayment.ToString();
+                //Add GST
+                myTotalPayment = myTotalPayment * 1.1m;
+                tbGST.Text = myTotalPayment.ToString();
+                totalPaymentTextBlock.Text = myTotalPayment.ToString();
             }
             catch (FormatException)
             {
@@ -51,6 +57,10 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            //Clear new Textblock 
+            tbGST.Text = "";
+            tbDeliveryCharges.Text = "";
+            tbwrappingCost.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)

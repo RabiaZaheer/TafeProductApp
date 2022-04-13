@@ -14,12 +14,12 @@
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,152,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
-        <Label Content="Delivery charges ($25.00).  " HorizontalAlignment="Left" Margin="48,209,0,0" VerticalAlignment="Top" />
-        <TextBlock  HorizontalAlignment="Left" Margin="122,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Delivery charges $25.00.  " HorizontalAlignment="Left" Margin="48,209,0,0" VerticalAlignment="Top" />
+        <TextBlock Name="tbDeliveryCharges"  HorizontalAlignment="Left" Margin="226,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Label Content="wrapping cost $5.00" HorizontalAlignment="Left" Margin="46,251,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="122,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Label Content="Total Charge After GST (@10%" HorizontalAlignment="Left" Margin="46,282,0,-0.333" Width="194"/>
-        <TextBlock HorizontalAlignment="Left" Margin="263,311,0,-6.333" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock Name="tbwrappingCost" HorizontalAlignment="Left" Margin="226,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Total Charge After GST @10%" HorizontalAlignment="Left" Margin="46,282,0,-0.333" Width="194"/>
+        <TextBlock Name="tbGST" HorizontalAlignment="Left" Margin="226,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25"/>
 
 
     </Grid>
